@@ -11,7 +11,7 @@ const createtokenandsavecookies= async (userId,res)=>{
     sameSites:"strict"
   })
 
-  await User.findByIdAndUpdate(userId,{token})
+  await  User.findByIdAndUpdate(userId,{token})
   return token;
 }
 export default createtokenandsavecookies;
