@@ -14,4 +14,4 @@ const createtokenandsavecookies= async (userId,res)=>{
   await  User.findByIdAndUpdate(userId,{token})
   return token;
 }
-export default createtokenandsavecookies;
+export  default createtokenandsavecookies;
