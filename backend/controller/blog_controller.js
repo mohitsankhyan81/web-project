@@ -5,7 +5,7 @@ export const createbolg=async(req,res)=>{
     }
     const {blogimage}=req.files;
 
-    const allowedformat=["image/jpeg","image/png","image/webp"];
+     const allowedformat=["image/jpeg","image/png","image/webp"];
 
     if(!allowedformat.includes(blogimage.mimetype)){
       return res.status(400).json({messege:"Invalid photo format. only jpg and png are allowed"})
