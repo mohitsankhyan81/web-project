@@ -14,7 +14,7 @@ export const createbolg=async(req,res)=>{
     const {title,category,about}=req.body;
     if(!title||!category||!about){
       return res.status(400).json({messege:"Please fill require fields"})
-     }
+      }
      
   }
 }
